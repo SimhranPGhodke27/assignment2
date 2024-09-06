@@ -1,6 +1,6 @@
-# MyAPI Project
+# MyAPI2 Project
 
-This README provides instructions for setting up and running the MyAPI application. Follow these steps to get the project up and running on your local machine.
+This README provides instructions for setting up and running the MyAPI2 application. Follow these steps to get the project up and running on your local machine.
 
 ## 1. Set Up Your Development Environment
 
@@ -13,17 +13,17 @@ This README provides instructions for setting up and running the MyAPI applicati
 ## 2. Project Setup
 
 1. **Create a Project Directory**
-   - Create a folder named `myapi` in your local directory.
+   - Create a folder named `myapi2` in your local directory.
 
 2. **Download Repository Files**
-   - Download all the files from this repository into the newly created `myapi` folder.
+   - Download all the files from this repository into the newly created `myapi2` folder.
 
 3. **Open Command Prompt and Navigate to Project Directory**
    - Open Command Prompt on your computer.
-   - Change the directory to the `myapi` project folder using the following command:
+   - Change the directory to the `myapi2` project folder using the following command:
 
      ```bash
-     cd your\projectdirectory\myapi
+     cd your\projectdirectory\myapi2
      ```
 
 4. **Run the API Server**
@@ -33,14 +33,14 @@ This README provides instructions for setting up and running the MyAPI applicati
      go run main.go
      ```
 
-   - You should see the message: `Server is running on http://localhost:8080`.
+   - You should see the message: `Server is running on http://localhost:9090`.
 
 5. **Open Another Command Prompt**
    - Open a new Command Prompt window.
-   - Navigate to the `myapi` directory again using the same command:
+   - Navigate to the `myapi2` directory again using the same command:
 
      ```bash
-     cd your\projectdirectory\myapi
+     cd your\projectdirectory\myapi2
      ```
 
 ## 3. Manage Users
@@ -50,13 +50,13 @@ You can now perform operations to view, retrieve, add, and delete users using th
 - **To View Existing Users:**
 
   ```bash
-  curl http://localhost:8080/users
+  curl http://localhost:9090/users
   ```
 
 - **To Retrieve a Particular User:**
 
   ```bash
-  curl "http://localhost:8080/user?id=id"
+  curl "http://localhost:9090/user?id=id"
   ```
 
   Replace `id` with the actual user ID you want to retrieve.
@@ -64,7 +64,7 @@ You can now perform operations to view, retrieve, add, and delete users using th
 - **To Add a New User:**
 
   ```bash
-  curl -X POST http://localhost:8080/users -d "{\"name\": \"New User Name\"}" -H "Content-Type: application/json"
+  curl -X POST http://localhost:9090/users -d "{\"name\": \"New User Name\"}" -H "Content-Type: application/json"
   ```
 
   Replace `"New User Name"` with the desired name of the new user.
@@ -72,7 +72,7 @@ You can now perform operations to view, retrieve, add, and delete users using th
 - **To Delete a User:**
 
   ```bash
-  curl -X DELETE "http://localhost:8080/users?id=id"
+  curl -X DELETE "http://localhost:9090/users?id=id"
   ```
 
   Replace `id` with the actual user ID you want to delete.
