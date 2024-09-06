@@ -15,7 +15,7 @@ type user struct {
 }
 
 // In-memory data store
-var users = []string{"Paul Bert", "John Doe", "Jane Smith", "Bob Johnson"}
+var users = []string{"Hally Lee", "Kelvin Paul", "Jonathan Swift", "Jessica Lee", "Kate Brown"}
 var mu sync.Mutex // Mutex to handle concurrent access
 
 // Handler to get all user names
@@ -87,6 +87,6 @@ func main() {
 		}
 	})
 
-	fmt.Println("Server is running on http://localhost:8080")
-	http.ListenAndServe(":8080", nil)
+	fmt.Println("Server is running on http://localhost:9090")
+	http.ListenAndServe(":9090", nil)
 }
